@@ -1,0 +1,57 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+{% block title %}Portfolio{% endblock %}
+
+{% block visual_content %}
+<!-- Portfolio Section -->
+<section id="portfolio" class="py-5">
+    <div class="container">
+        <h2 class="mb-4 text-center">My Portfolio</h2>
+        <p class="text-center mb-5">
+            Explore some of my recent projects and accomplishments.
+        </p>
+        <div class="row">
+            <!-- Portfolio Item 1 -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Project 1</h5>
+                        <img src="{% static 'derastudioapp/images/dera.png' %}" alt="Slide 3" width="100" height="40">
+                        <p class="card-text">Brief description of project 1.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Portfolio Item 2 -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img
+                        src="https://via.placeholder.com/350x200"
+                        class="card-img-top"
+                        alt="Project 2"
+                    />
+                    <div class="card-body">
+                        <h5 class="card-title">Project 2</h5>
+                        <p class="card-text">Brief description of project 2.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Portfolio Item 3 -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img
+                        src="https://via.placeholder.com/350x200"
+                        class="card-img-top"
+                        alt="Project 3"
+                    />
+                    <div class="card-body">
+                        <h5 class="card-title">Project 3</h5>
+                        <p class="card-text">Brief description of project 3.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

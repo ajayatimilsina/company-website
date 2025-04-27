@@ -1,0 +1,56 @@
+{% extends 'base.html' %}
+
+{% block title %}Services{% endblock %}
+
+{% block visual_content %}
+<div class="container py-5">
+    <h1 class="text-center">Our Services</h1>
+    <p class="text-center">Explore the wide range of services we offer to meet your needs.</p>
+    <!-- Services content goes here -->
+</div>
+
+<!-- Services Section -->
+<section id="services" class="py-5 bg-light">
+  <div class="container">
+    <h2 class="mb-4 text-center">What I Offer</h2>
+    <p class="text-center mb-5">
+      I offer the following services to help you grow digitally.
+    </p>
+    <div class="row">
+      <!-- Service 1 -->
+      <div class="col-md-6 mb-4">
+        <div class="card h-100">
+          <div class="card-body">
+            <h3 class="card-title">01 Online Class</h3>
+            <p class="card-text">
+              Master the skills that top companies are looking for today!
+              Learn AI, coding, web development, app creation, and digital
+              marketing from me. My courses are your gateway to in-demand
+              skills and a brighter future. Limited spots—join the next wave of
+              tech leaders.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- Service 2 -->
+      <div class="col-md-6 mb-4">
+        <div class="card h-100">
+          <div class="card-body">
+            <h3 class="card-title">02 Tech Consultation</h3>
+            <p class="card-text">
+              Unlock your business's true potential with expert guidance! With
+              5+ years of experience, I provide tailored tech solutions to help
+              your business thrive. Book now and start seeing real results
+              with expert guidance.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock %}
+
+{% block footer %}
+{{ block.super }}
+{% endblock %}

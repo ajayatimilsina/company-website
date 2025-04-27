@@ -1,0 +1,211 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block title %}About Us{% endblock %}
+
+{% block visual_content %}
+<div class="container mt-5">
+    <h1>About Us</h1>
+    <h2 class="mb-4 text-center">About Me</h2>
+    <h4 class="text-center mb-4">フリマアプリサポート,eSports,動画作成教室</h4>
+    <p>
+      旅行、店舗紹介、料理 日本、ネパール※1、文化紹介 ネパール→日本、日本→ネパール
+TRPG、最新ボードゲーム紹介、eスポーツチャレンジ、トーク、IT関連情報発信
+    </p>
+    <ul>
+      <li>
+        <strong>旅行、店舗紹介、料理（日本・ネパール）:</strong>日本とネパールの旅行や食文化の違いを紹介すると、各国のユニークな体験をシェアできそうです。
+        日本では、例えば温泉や食文化（寿司、ラーメン）を、ネパールではヒマラヤ登山やダルバール広場などを紹介できますね
+      </li>
+      <li>
+        <strong>文化紹介 ネパール→日本、日本→ネパール:</strong> 日本からネパールへ、またはその逆で文化の交換や紹介をすることで、両国の相互理解を深めるコンテンツが作れるかもしれません。
+        例えば、ネパールの伝統的な祭りや料理、日本の茶道やアニメ文化などを紹介するのは面白いアイディアです。
+      </li>
+      <li>
+        <strong>TRPG、最新ボードゲーム紹介:</strong>TRPGやボードゲームは、特にオンラインで人気です。新しいボードゲームやTRPGのルール、プレイ方法を紹介し、
+        プレイヤーとの交流を深めるコンテンツが作れます。日本とネパールで人気のゲームを比較するのも面白いかも！
+      </li>
+      <li>
+        <strong>eスポーツチャレンジ:</strong> ゲームの世界で、eスポーツを通じたチャレンジイベントや対戦を紹介するのも素晴らしいです。
+        日本とネパールのeスポーツシーンを比較し、各国のトッププレイヤーや大会を紹介することができます。
+      </li>
+      <li>
+        <strong>IT関連情報発信:</strong> IT関連情報は、日本とネパールのテクノロジーの進展状況や、IT業界のトレンドを紹介できます。例えば、日本の先端技術やスタートアップ、
+        ネパールでのIT教育やテクノロジー業界の成長を比較したり、最新のITガジェットをレビューしたりも面白いでしょう。
+      </li>
+    </ul>
+    <img src="{% static 'main/images/slide2.png' %}" alt="Slide 3" width="700" height="500" class="rounded-circle">
+    <p>Welcome to our company! We are dedicated to providing the best services to our clients. Our team of experts works tirelessly to ensure customer satisfaction and deliver exceptional results.</p>
+    <p>Our mission is to innovate and lead in our industry, setting new standards of excellence. Thank you for choosing us!</p>
+</div>
+{% endblock %}
+
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="{% url 'home' %}">Brand Logo</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="nav flex-column">
+            <li class="nav-item">
+                <a class="nav-link text-black" href="{% url 'about' %}">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-black" href="{% url 'services' %}">Services</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-black" href="{% url 'portfolio' %}">Portfolio</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-black" href="{% url 'blog' %}">Blog</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-black" href="{% url 'contact' %}">Contact</a>
+            </li>
+            <!-- Dropdown Menu Right -->
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-black" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Dropdown Menu Right
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<div class="d-flex">
+    <!-- Left Side: Visual Content -->
+    <div class="visual-content flex-grow-1">
+        <div class="hero-section">
+            <h1>Welcome to Our Company</h1>
+            <p>Experience the best services with a smile!</p>
+            <img src="{% static 'main/images/dera.png' %}" alt="Smiling Character">
+        </div>
+
+        <div class="about-us-section mt-5">
+            <h2>About Us</h2>
+            <p>We are a leading company specializing in delivering top-notch services to our clients. Our team is dedicated to ensuring customer satisfaction and excellence in every project we undertake.</p>
+        </div>
+
+        <div class="services-section mt-5">
+            <h2>Our Services</h2>
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link text-black" href="{% url 'about' %}">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-black" href="{% url 'services' %}">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-black" href="{% url 'portfolio' %}">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-black" href="{% url 'blog' %}">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-black" href="{% url 'contact' %}">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!-- Bottom Navigation -->
+<div class="footer">
+    {% block footer %}
+    <p>&copy; 2025 Japanese Style Company. All rights reserved.</p>
+    <a href="#privacy-policy">Privacy Policy</a> | <a href="#terms-of-service">Terms of Service</a> | <a href="#faq">FAQ</a>
+    <div class="mt-2">
+        <a href="#" class="btn btn-sm btn-outline-secondary">Back to Top</a>
+    </div>
+    <div class="divider"></div>
+    <div class="sidebar-footer">
+        <h3>Quick Links</h3>
+        <ul class="nav flex-column">
+            <li class="nav-item">
+                <a class="nav-link text-black" href="{% url 'home' %}">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-black" href="{% url 'about' %}">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-black" href="{% url 'services' %}">Services</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-black" href="{% url 'portfolio' %}">Portfolio</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-black" href="{% url 'blog' %}">Blog</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-black" href="{% url 'contact' %}">Contact</a>
+            </li>
+        </ul>
+        <div class="divider"></div>
+        <p>Stay Connected:</p>
+        <a href="#" class="btn btn-sm btn-outline-primary">Facebook</a>
+        <a href="#" class="btn btn-sm btn-outline-info">Twitter</a>
+        <a href="#" class="btn btn-sm btn-outline-danger">Instagram</a>
+    </div>
+    {% endblock %}
+</div>
+
+<!-- About Section -->
+<section id="about" class="py-5">
+  <div class="container">
+    <h2 class="mb-4 text-center">About Me</h2>
+    <h4 class="text-center mb-4">フリマアプリサポート,eSports,動画作成教室</h4>
+    <p>
+      旅行、店舗紹介、料理 日本、ネパール※1、文化紹介 ネパール→日本、日本→ネパール
+      TRPG、最新ボードゲーム紹介、eスポーツチャレンジ、トーク、IT関連情報発信
+    </p>
+    <ul>
+      <li>
+        <strong>旅行、店舗紹介、料理（日本・ネパール）:</strong>日本とネパールの旅行や食文化の違いを紹介すると、各国のユニークな体験をシェアできそうです。
+        日本では、例えば温泉や食文化（寿司、ラーメン）を、ネパールではヒマラヤ登山やダルバール広場などを紹介できますね
+      </li>
+      <li>
+        <strong>文化紹介 ネパール→日本、日本→ネパール:</strong> 日本からネパールへ、またはその逆で文化の交換や紹介をすることで、両国の相互理解を深めるコンテンツが作れるかもしれません。
+        例えば、ネパールの伝統的な祭りや料理、日本の茶道やアニメ文化などを紹介するのは面白いアイディアです。
+      </li>
+      <li>
+        <strong>TRPG、最新ボードゲーム紹介:</strong>TRPGやボードゲームは、特にオンラインで人気です。新しいボードゲームやTRPGのルール、プレイ方法を紹介し、
+        プレイヤーとの交流を深めるコンテンツが作れます。日本とネパールで人気のゲームを比較するのも面白いかも！
+      </li>
+      <li>
+        <strong>eスポーツチャレンジ:</strong> ゲームの世界で、eスポーツを通じたチャレンジイベントや対戦を紹介するのも素晴らしいです。
+        日本とネパールのeスポーツシーンを比較し、各国のトッププレイヤーや大会を紹介することができます。
+      </li>
+      <li>
+        <strong>IT関連情報発信:</strong> IT関連情報は、日本とネパールのテクノロジーの進展状況や、IT業界のトレンドを紹介できます。例えば、日本の先端技術やスタートアップ、
+        ネパールでのIT教育やテクノロジー業界の成長を比較したり、最新のITガジェットをレビューしたりも面白いでしょう。
+      </li>
+    </ul>
+    <div class="row text-center mt-5">
+      <div class="col-md-6">
+        <h3>0+</h3>
+        <p>Subscribers</p>
+      </div>
+      <div class="col-md-6">
+        <h3>0</h3>
+        <p>App Downloads</p>
+      </div>
+    </div>
+    <div class="text-center mt-4">
+      <h5>ITキャリアを変革する準備はできていますか？</h5>
+      <p>
+          ITキャリアを変革する準備はできていますか？私のメンターシップを通じて、
+          成功するITキャリアに必要なスキルと知識を身につけましょう。
+          共にあなたの夢を現実にするために、最適なサポートを提供します。さあ、あなたのキャリアの旅を始めましょう！
+      </p>
+      <a href="#contact" class="btn btn-primary">Book Appointment</a>
+    </div>
+  </div>
+</section>

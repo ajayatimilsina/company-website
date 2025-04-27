@@ -1,0 +1,72 @@
+{% extends 'base.html' %}
+
+{% block title %}Blog{% endblock %}
+
+{% block visual_content %}
+<div class="container py-5">
+    <h1 class="text-center">Welcome to Our Blog</h1>
+    <p class="text-center">Stay updated with the latest news and articles.</p>
+    <!-- Blog content goes here -->
+</div>
+
+<!-- Blogs Section -->
+<section id="blogs" class="py-5 bg-light">
+  <div class="container">
+    <h2 class="mb-4 text-center">My Blogs</h2>
+    <div class="row">
+      <!-- Blog Post 1 -->
+      <div class="col-md-4 mb-4">
+        <div class="card h-100">
+          <div class="card-body">
+            <h5 class="card-title">5W 1H Framework For Life</h5>
+            <p class="card-text">
+              <small class="text-muted">December 5, 2024 | iambrp</small>
+            </p>
+            <p class="card-text">
+              The 5W 1H framework is a problem-solving, planning, and analysis
+              method. It stands for...
+            </p>
+            <a href="#" class="btn btn-link p-0">Continue Reading</a>
+          </div>
+        </div>
+      </div>
+      <!-- Blog Post 2 -->
+      <div class="col-md-4 mb-4">
+        <div class="card h-100">
+          <div class="card-body">
+            <h5 class="card-title">My Favourite 10 Rules For Success</h5>
+            <p class="card-text">
+              <small class="text-muted">October 1, 2024 | iambrp</small>
+            </p>
+            <p class="card-text">
+              Hi, I am a person who always tries to learn and improve my skills
+              and knowledge. Life...
+            </p>
+            <a href="#" class="btn btn-link p-0">Continue Reading</a>
+          </div>
+        </div>
+      </div>
+      <!-- Blog Post 3 -->
+      <div class="col-md-4 mb-4">
+        <div class="card h-100">
+          <div class="card-body">
+            <h5 class="card-title">The Power of Cold E-mailing</h5>
+            <p class="card-text">
+              <small class="text-muted">January 3, 2024 | iambrp</small>
+            </p>
+            <p class="card-text">
+              What is Cold E-mailing? Cold e-mailing is a method of sending an
+              e-mail or message to...
+            </p>
+            <a href="#" class="btn btn-link p-0">Continue Reading</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock %}
+
+{% block footer %}
+{{ block.super }}
+{% endblock %}
