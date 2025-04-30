@@ -113,8 +113,8 @@
 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
 </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="nav flex-column">
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+            <ul class="navbar-nav">
                 <li class="nav-item">
                     <a class="nav-link text-black" href="{% url 'about' %}">About</a>
                 </li>
@@ -129,18 +129,6 @@
                 </li>
                 <li class="nav-item">
                     <a class="nav-link text-black" href="{% url 'contact' %}">Contact</a>
-                </li>
-                <!-- Dropdown Menu Right -->
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle text-black" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Dropdown Menu Right
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <li><a class="dropdown-item" href="#">Action</a></li>
-                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                        <li><hr class="dropdown-divider"></li>
-                        <li><a class="dropdown-item" href="#">Something else here</a></li>
-                    </ul>
                 </li>
             </ul>
         </div>
