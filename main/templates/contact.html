@@ -1,25 +1,25 @@
 {% extends 'base.html' %}
 
-{% block title %}Contact Us{% endblock %}
+{% block title %}お問い合わせ{% endblock %}
 
 {% block visual_content %}
 <div class="container mt-5">
-    <h1>Contact Us</h1>
-    <p>We would love to hear from you! Please fill out the form below to get in touch with us.</p>
-    <form>
-        <div class="mb-3">
-            <label for="name" class="form-label">Name</label>
-            <input type="text" class="form-control" id="name" placeholder="Enter your name">
-        </div>
-        <div class="mb-3">
-            <label for="email" class="form-label">Email</label>
-            <input type="email" class="form-control" id="email" placeholder="Enter your email">
-        </div>
-        <div class="mb-3">
-            <label for="message" class="form-label">Message</label>
-            <textarea class="form-control" id="message" rows="5" placeholder="Enter your message"></textarea>
-        </div>
-        <button type="submit" class="btn btn-primary">Submit</button>
-    </form>
+    <h1>お問い合わせ</h1>
+    <p>ご質問・ご相談は下記フォームよりお気軽にご連絡ください。</p>
+    <section id="sns" class="mb-5">
+        <h2>📱 SNS / 動画案内</h2>
+        <ul>
+            <li><a href="#">YouTube（動画で道順チェック）</a></li>
+            <li>Instagram / LINE VOOM でも配信中！</li>
+        </ul>
+    </section>
+    <hr>
+    <section id="ticket" class="mb-5">
+        <h2>🎟 無料体験チケット</h2>
+        <ul>
+            <li>動画教室 初心者コース（30分）</li>
+            <li>eスポーツ体験（15分）</li>
+        </ul>
+    </section>
 </div>
 {% endblock %}

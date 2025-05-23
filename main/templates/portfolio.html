@@ -8,50 +8,80 @@
 <!-- Portfolio Section -->
 <section id="portfolio" class="py-5">
     <div class="container">
-        <h2 class="mb-4 text-center">My Portfolio</h2>
+        <h2 class="mb-4 text-center">実績紹介</h2>
         <p class="text-center mb-5">
-            Explore some of my recent projects and accomplishments.
+            でら! Studioの主な実績・プロジェクトをご紹介します。
         </p>
         <div class="row">
             <!-- Portfolio Item 1 -->
             <div class="col-md-4 mb-4">
                 <div class="card">
+                    <img src="{% static 'main/images/dera4.png' %}" class="card-img-top" alt="eスポーツ体験の写真">
                     <div class="card-body">
-                        <h5 class="card-title">Project 1</h5>
-                        <img src="{% static 'derastudioapp/images/dera.png' %}" alt="Slide 3" width="100" height="40">
-                        <p class="card-text">Brief description of project 1.</p>
+                        <h5 class="card-title">eスポーツ体験</h5>
+                        <p class="card-text">グランツーリスモやAPEX Legendsなど、最新設備で本格eスポーツ体験ができます。事前予約・無料体験あり。</p>
                     </div>
                 </div>
             </div>
             <!-- Portfolio Item 2 -->
             <div class="col-md-4 mb-4">
                 <div class="card">
-                    <img
-                        src="https://via.placeholder.com/350x200"
-                        class="card-img-top"
-                        alt="Project 2"
-                    />
+                    <img src="{% static 'main/images/dera9.png' %}" class="card-img-top" alt="グランツーリスモの写真">
                     <div class="card-body">
-                        <h5 class="card-title">Project 2</h5>
-                        <p class="card-text">Brief description of project 2.</p>
+                        <h5 class="card-title">グランツーリスモ</h5>
+                        <p class="card-text">本格的なレース体験ができる「グランツーリスモ Sports」を専用設備で楽しめます。初心者も大歓迎！</p>
                     </div>
                 </div>
             </div>
             <!-- Portfolio Item 3 -->
             <div class="col-md-4 mb-4">
                 <div class="card">
-                    <img
-                        src="https://via.placeholder.com/350x200"
-                        class="card-img-top"
-                        alt="Project 3"
-                    />
+                    <img src="{% static 'main/images/dera5.png' %}" class="card-img-top" alt="APEX Legendsの写真">
                     <div class="card-body">
-                        <h5 class="card-title">Project 3</h5>
-                        <p class="card-text">Brief description of project 3.</p>
+                        <h5 class="card-title">APEX Legends・ITサポート</h5>
+                        <p class="card-text">人気FPS「APEX Legends」の体験や、パソコン・スマホのITサポートも充実。初心者も安心してご利用いただけます。</p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </section>
+
+<section id="esports" class="mb-5">
+    <div class="container">
+        <h2 class="mb-4 text-center">🎮 eスポーツ体験（事前予約制・無料体験あり）</h2>
+        <p class="text-center mb-5">
+            「ゲームは遊びじゃない！」競技としてのeスポーツを体験しよう！
+        </p>
+        <h5>📌 提供ゲーム例：</h5>
+        <ul>
+            <li>グランツーリスモ Sports（レース）</li>
+            <li>APEX Legends（FPS）</li>
+        </ul>
+        <h5>🖥 設備：</h5>
+        <ul>
+            <li>専用コントローラー</li>
+            <li>ワイドディスプレイ</li>
+            <li>サブキーボード</li>
+            <li>VRヘッドマウント対応</li>
+        </ul>
+        <div class="table-responsive">
+            <table class="table table-bordered align-middle">
+                <thead class="table-light">
+                    <tr>
+                        <th>時間</th>
+                        <th>料金</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>15分</td><td>500円</td></tr>
+                    <tr><td>30分</td><td>900円</td></tr>
+                    <tr><td>60分</td><td>1,600円</td></tr>
+                </tbody>
+            </table>
+        </div>
+        <p class="text-center">🎫 無料体験チケットあり！（15分）</p>
+    </div>
+</section>
+
 {% endblock %}
